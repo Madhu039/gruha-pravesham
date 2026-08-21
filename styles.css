@@ -88,8 +88,3 @@ footer { background:#4c1714; color:#f9ead0; text-align:center; padding:55px 20px
   .photo-grid { grid-template-columns:1fr 1fr; }.p1 { grid-column:1 / -1; min-height:250px; }.p2,.p3 { min-height:200px; }
   .section { padding:70px 18px; }.count-box { min-width:68px; padding:12px 6px; }.count-box strong { font-size:27px; }.count-box span { font-size:7px; }
 }
-@media (max-width: 480px) {
-  .music-btn span { display:none; }.music-btn { width:38px; height:38px; justify-content:center; padding:0; }
-  .hero h1 { font-size:65px; }.event-grid { grid-template-columns:1fr; }.countdown { gap:5px; }.count-box { min-width:65px; }
-  .venue-actions a { flex:1; }.rsvp-section h2 { font-size:38px; }
-}
