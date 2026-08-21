@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Noto+Serif+Telugu:wght@400;600&display=swap');
+
+:root {
+  --maroon: #8f2d24;
+  --deep: #531b17;
+  --gold: #c99a42;
+  --cream: #fbf4e7;
+  --paper: #fffaf1;
+  --ink: #38241f;
+  --muted: #7d6961;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:var(--cream); color:var(--ink); font-family:Inter, sans-serif; }
+button,a { font:inherit; }
+a { color:inherit; text-decoration:none; }
+.app { overflow:hidden; }
+.hero {
+  min-height:100vh; position:relative; display:flex; align-items:center; justify-content:center;
+  text-align:center; padding:80px 20px 60px;
+  background:
+    radial-gradient(circle at 50% 35%, rgba(255,255,255,.92), rgba(255,255,255,.45) 28%, transparent 58%),
+    linear-gradient(135deg,#f9ead0,#fffaf0 50%,#f4dfc2);
+}
+.hero:before,.hero:after {
+  content:""; position:absolute; inset:20px; border:1px solid rgba(143,45,36,.18); pointer-events:none;
+}
+.hero:after { inset:34px; border-color:rgba(201,154,66,.28); }
+.hero-inner { max-width:800px; position:relative; z-index:2; }
+.ganesha { font-family:Georgia,serif; font-size:54px; color:var(--maroon); margin-bottom:4px; }
+.mantra { font-family:"Noto Serif Telugu",serif; color:var(--maroon); font-size:17px; margin:0 0 34px; }
+.eyebrow { letter-spacing:.25em; font-size:11px; font-weight:600; color:var(--gold); margin:0 0 13px; }
+.hero h1 { font-family:"Cormorant Garamond",serif; font-size:clamp(70px,12vw,132px); line-height:.72; font-weight:500; color:var(--deep); margin:0; text-transform:uppercase; letter-spacing:.02em; }
+.hero h1 em { font-size:.7em; text-transform:none; font-weight:400; }
+.divider { display:flex; align-items:center; gap:14px; justify-content:center; color:var(--gold); margin:38px auto 23px; }
+.divider:before,.divider:after { content:""; width:100px; height:1px; background:linear-gradient(90deg,transparent,var(--gold)); }
+.divider:after { transform:scaleX(-1); }
+.invite { font-family:"Cormorant Garamond",serif; font-size:22px; line-height:1.4; color:#5d4941; }
+.hero h2 { font-family:"Cormorant Garamond",serif; font-size:27px; font-weight:600; color:var(--maroon); margin:23px 0 14px; }
+.hero-date { display:flex; justify-content:center; gap:10px; align-items:center; flex-wrap:wrap; color:#604c44; font-size:13px; }
+.primary,.secondary {
+  display:inline-flex; align-items:center; justify-content:center; gap:9px; border:0; cursor:pointer;
+  padding:13px 22px; border-radius:2px; transition:.2s; margin-top:28px;
+}
+.primary { background:var(--maroon); color:white; box-shadow:0 8px 22px rgba(83,27,23,.16); }
+.primary:hover { transform:translateY(-2px); background:var(--deep); }
+.secondary { background:transparent; color:var(--maroon); border:1px solid rgba(143,45,36,.4); }
+.small { margin-top:12px; padding:11px 16px; font-size:13px; }
+.scroll-hint { position:absolute; bottom:22px; left:50%; transform:translateX(-50%); font-size:9px; letter-spacing:.25em; color:#8e7669; display:flex; gap:7px; align-items:center; }
+.leaf { position:absolute; font-size:100px; opacity:.08; }
+.leaf-a { left:5%; top:15%; transform:rotate(-25deg); }.leaf-b { right:5%; bottom:13%; transform:rotate(35deg); }
+.music-btn { position:fixed; z-index:20; right:18px; top:18px; border:1px solid rgba(143,45,36,.2); background:rgba(255,250,241,.9); backdrop-filter:blur(8px); color:var(--maroon); border-radius:30px; padding:9px 13px; display:flex; gap:7px; align-items:center; cursor:pointer; font-size:11px; }
+.section { max-width:1050px; margin:auto; padding:95px 24px; }
+.section-heading { text-align:center; }
+.section-heading h2 { font:500 clamp(38px,5vw,56px)/1 "Cormorant Garamond",serif; color:var(--deep); margin:0 0 30px; }
+.section-heading .ornament { color:var(--gold); font-size:35px; display:block; transform:rotate(180deg); margin-bottom:12px; }
+.intro { text-align:center; }
+.intro-copy { max-width:720px; margin:0 auto; color:#68554d; line-height:1.9; font-size:15px; }
+.om-card { margin:45px auto 0; padding:28px; max-width:500px; background:rgba(255,255,255,.45); border:1px solid rgba(201,154,66,.28); }
+.om-card span { color:var(--maroon); font:40px Georgia,serif; }
+.om-card p { font-family:"Cormorant Garamond",serif; font-size:20px; line-height:1.35; margin:10px 0 0; }
+.schedule { padding-top:55px; }
+.event-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+.event-card { text-align:center; background:rgba(255,255,255,.62); padding:34px 18px; border:1px solid rgba(143,45,36,.09); }
+.event-icon { font-size:34px; margin-bottom:15px; }
+.event-time { color:var(--gold); font-size:11px; font-weight:600; letter-spacing:.12em; }
+.event-card h3 { font:600 25px "Cormorant Garamond",serif; color:var(--deep); margin:7px 0; }
+.event-card p:last-child { color:var(--muted); line-height:1.55; font-size:12px; }
+.countdown-section { position:relative; background:var(--maroon); padding:78px 20px; text-align:center; color:white; overflow:hidden; }
+.pattern { position:absolute; inset:0; opacity:.08; background-image:radial-gradient(circle at 20px 20px,#fff 1px,transparent 1.5px); background-size:40px 40px; }
+.light { position:relative; color:white; }.light h2 { color:white; margin-bottom:28px; }.light .eyebrow { color:#e6c681; }
+.countdown { position:relative; display:flex; justify-content:center; gap:12px; }
+.count-box { min-width:90px; padding:15px 10px; border:1px solid rgba(255,255,255,.25); background:rgba(255,255,255,.08); }
+.count-box strong { display:block; font:600 34px "Cormorant Garamond",serif; }.count-box span { font-size:9px; text-transform:uppercase; letter-spacing:.15em; opacity:.75; }
+.venue-card { display:grid; grid-template-columns:1fr 1.2fr; background:#fffaf1; border:1px solid rgba(143,45,36,.1); max-width:850px; margin:auto; }
+.house-art { min-height:300px; display:flex; align-items:center; justify-content:center; flex-direction:column; background:linear-gradient(145deg,#eed8b5,#f8ead3); color:var(--maroon); gap:15px; }
+.house-art span { font:30px Georgia,serif; }
+.venue-info { padding:50px; align-self:center; }.venue-info h3 { font:600 36px "Cormorant Garamond",serif; color:var(--deep); margin:0 0 15px; }.venue-info p { color:var(--muted); display:flex; gap:10px; line-height:1.6; font-size:13px; }.venue-actions { display:flex; gap:8px; flex-wrap:wrap; }
+.gallery { padding-top:40px; }.photo-grid { display:grid; grid-template-columns:1.2fr .8fr .8fr; gap:12px; }.photo { min-height:280px; display:flex; flex-direction:column; align-items:center; justify-content:center; background:#ead8bb; color:var(--maroon); }.photo span { font-size:60px; }.photo small { margin-top:12px; color:#705b4d; }.p2 { min-height:210px; align-self:end; background:#e7cfc0; }.p3 { min-height:250px; background:#e2d5b9; }.gallery-note { text-align:center; font-size:11px; color:#9a8579; margin-top:15px; }
+.rsvp-section { text-align:center; padding:100px 20px; background:#f4e4cb; position:relative; }.rsvp-section h2 { font:500 47px "Cormorant Garamond",serif; color:var(--deep); margin:12px 0; }.rsvp-section p { color:var(--muted); }.rsvp-flower { color:var(--gold); }
+footer { background:#4c1714; color:#f9ead0; text-align:center; padding:55px 20px; }.footer-om { font:36px Georgia,serif; }.footer h3 { font:500 28px "Cormorant Garamond",serif; margin:8px 0; }.footer p { color:#dcbf9b; font-size:13px; }.footer-divider { color:var(--gold); letter-spacing:9px; margin:20px 0; }.footer small { color:#a9857a; font-size:9px; letter-spacing:.1em; }
+.modal-backdrop { position:fixed; inset:0; z-index:50; background:rgba(34,10,8,.65); display:grid; place-items:center; padding:20px; }.modal { background:var(--paper); max-width:390px; width:100%; padding:45px 30px; text-align:center; position:relative; border:1px solid var(--gold); }.modal-icon { font-size:42px; }.modal h2 { font:500 42px "Cormorant Garamond",serif; color:var(--deep); margin:10px 0; }.modal p { color:var(--muted); line-height:1.6; }.modal .primary { margin-top:12px; }.close { position:absolute; right:12px; top:8px; border:0; background:none; font-size:28px; cursor:pointer; color:var(--maroon); }.music-note { position:fixed; z-index:30; left:15px; bottom:15px; max-width:320px; background:#fffaf1; padding:12px 14px; border:1px solid #e3c98e; font-size:11px; box-shadow:0 8px 25px rgba(0,0,0,.1); }
+
+@media (max-width: 760px) {
+  .hero { min-height:92vh; padding:65px 20px 55px; }.hero:before { inset:12px; }.hero:after { inset:23px; }
+  .mantra { margin-bottom:25px; }.invite { font-size:19px; }.hero h2 { font-size:24px; }.hero-date { font-size:12px; }
+  .event-grid { grid-template-columns:1fr 1fr; }.venue-card { grid-template-columns:1fr; }.house-art { min-height:220px; }.venue-info { padding:32px 24px; }
+  .photo-grid { grid-template-columns:1fr 1fr; }.p1 { grid-column:1 / -1; min-height:250px; }.p2,.p3 { min-height:200px; }
+  .section { padding:70px 18px; }.count-box { min-width:68px; padding:12px 6px; }.count-box strong { font-size:27px; }.count-box span { font-size:7px; }
+}
+@media (max-width: 480px) {
+  .music-btn span { display:none; }.music-btn { width:38px; height:38px; justify-content:center; padding:0; }
+  .hero h1 { font-size:65px; }.event-grid { grid-template-columns:1fr; }.countdown { gap:5px; }.count-box { min-width:65px; }
+  .venue-actions a { flex:1; }.rsvp-section h2 { font-size:38px; }
+}
