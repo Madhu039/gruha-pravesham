@@ -52,12 +52,7 @@ function Countdown() {
 }
 
 function App() {
-  const [musicOn, setMusicOn] = useState(false);
-  const [showRsvp, setShowRsvp] = useState(false);
-
-  const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-
-  return (
+  
     <div className="app">
       <button className="music-btn" onClick={() => setMusicOn(v => !v)} title="Toggle music">
         {musicOn ? <Volume2 size={19}/> : <VolumeX size={19}/>}
