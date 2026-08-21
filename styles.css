@@ -81,10 +81,3 @@ a { color:inherit; text-decoration:none; }
 footer { background:#4c1714; color:#f9ead0; text-align:center; padding:55px 20px; }.footer-om { font:36px Georgia,serif; }.footer h3 { font:500 28px "Cormorant Garamond",serif; margin:8px 0; }.footer p { color:#dcbf9b; font-size:13px; }.footer-divider { color:var(--gold); letter-spacing:9px; margin:20px 0; }.footer small { color:#a9857a; font-size:9px; letter-spacing:.1em; }
 .modal-backdrop { position:fixed; inset:0; z-index:50; background:rgba(34,10,8,.65); display:grid; place-items:center; padding:20px; }.modal { background:var(--paper); max-width:390px; width:100%; padding:45px 30px; text-align:center; position:relative; border:1px solid var(--gold); }.modal-icon { font-size:42px; }.modal h2 { font:500 42px "Cormorant Garamond",serif; color:var(--deep); margin:10px 0; }.modal p { color:var(--muted); line-height:1.6; }.modal .primary { margin-top:12px; }.close { position:absolute; right:12px; top:8px; border:0; background:none; font-size:28px; cursor:pointer; color:var(--maroon); }.music-note { position:fixed; z-index:30; left:15px; bottom:15px; max-width:320px; background:#fffaf1; padding:12px 14px; border:1px solid #e3c98e; font-size:11px; box-shadow:0 8px 25px rgba(0,0,0,.1); }
 
-@media (max-width: 760px) {
-  .hero { min-height:92vh; padding:65px 20px 55px; }.hero:before { inset:12px; }.hero:after { inset:23px; }
-  .mantra { margin-bottom:25px; }.invite { font-size:19px; }.hero h2 { font-size:24px; }.hero-date { font-size:12px; }
-  .event-grid { grid-template-columns:1fr 1fr; }.venue-card { grid-template-columns:1fr; }.house-art { min-height:220px; }.venue-info { padding:32px 24px; }
-  .photo-grid { grid-template-columns:1fr 1fr; }.p1 { grid-column:1 / -1; min-height:250px; }.p2,.p3 { min-height:200px; }
-  .section { padding:70px 18px; }.count-box { min-width:68px; padding:12px 6px; }.count-box strong { font-size:27px; }.count-box span { font-size:7px; }
-}
