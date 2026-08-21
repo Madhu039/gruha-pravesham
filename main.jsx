@@ -59,10 +59,7 @@ function App() {
 
   return (
     <div className="app">
-      <button className="music-btn" onClick={() => setMusicOn(v => !v)} title="Toggle music">
-        {musicOn ? <Volume2 size={19}/> : <VolumeX size={19}/>}
-        <span>{musicOn ? "Music On" : "Music Off"}</span>
-      </button>
+      
 
       <header className="hero">
         <div className="leaf leaf-a">🌿</div>
