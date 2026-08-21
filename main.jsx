@@ -189,9 +189,7 @@ function App() {
         </div>
       )}
 
-      {musicOn && (
-        <div className="music-note">🎵 Add your devotional MP3 in <code>public/music.mp3</code> and connect it to the music button.</div>
-      )}
+      
     </div>
   );
 }
